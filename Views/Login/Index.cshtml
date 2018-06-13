@@ -1,0 +1,39 @@
+﻿@model Usuario
+
+@{
+    Layout = "_Login";
+}
+
+<body>
+    <section class="hero is-success is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title has-text-grey">Agendamento - Login</h3>
+                    <p class="subtitle has-text-grey">Por favor, faça o login para continuar.</p>
+                    <div class="box">
+                        <figure class="avatar">
+                            <img src="images/user-icon.png">
+                        </figure>
+                        <form asp-action="Logar">
+                            <div class="field">
+                                <div class="control">
+                                    <input asp-for="Login" class="input is-large" type="text" placeholder="Seu Login" autofocus="">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <input asp-for="Senha" class="input is-large" type="password" placeholder="Sua Senha">
+                                </div>
+                            </div>
+                            <input type="submit" value="Logar" class="button is-block is-info is-large is-fullwidth" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

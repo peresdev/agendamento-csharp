@@ -1,0 +1,10 @@
+/Users/mobile/Projects/Agendamento/Agendamento/bin/Release/netcoreapp2.0/Agendamento.deps.json
+/Users/mobile/Projects/Agendamento/Agendamento/bin/Release/netcoreapp2.0/Agendamento.runtimeconfig.json
+/Users/mobile/Projects/Agendamento/Agendamento/bin/Release/netcoreapp2.0/Agendamento.runtimeconfig.dev.json
+/Users/mobile/Projects/Agendamento/Agendamento/bin/Release/netcoreapp2.0/Agendamento.dll
+/Users/mobile/Projects/Agendamento/Agendamento/bin/Release/netcoreapp2.0/Agendamento.pdb
+/Users/mobile/Projects/Agendamento/Agendamento/obj/Release/netcoreapp2.0/Agendamento.csproj.CoreCompileInputs.cache
+/Users/mobile/Projects/Agendamento/Agendamento/obj/Release/netcoreapp2.0/Agendamento.AssemblyInfoInputs.cache
+/Users/mobile/Projects/Agendamento/Agendamento/obj/Release/netcoreapp2.0/Agendamento.AssemblyInfo.cs
+/Users/mobile/Projects/Agendamento/Agendamento/obj/Release/netcoreapp2.0/Agendamento.dll
+/Users/mobile/Projects/Agendamento/Agendamento/obj/Release/netcoreapp2.0/Agendamento.pdb

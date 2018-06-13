@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Usuario>
+
+@{
+    ViewData["Title"] = "Usuários";
+}
+
+<div class="container">
+    <div class="columns">
+        <div class="column is-3">
+            <aside class="menu">
+                <p class="menu-label">
+                    Administração
+                </p>
+                <ul class="menu-list">
+                    <li><a asp-controller="Home" asp-action="Index">Totais</a></li>
+                    <li><a class="is-active" asp-controller="Usuarios" asp-action="Index">Usuários</a></li>
+                    <li><a asp-controller="Pacientes" asp-action="Index">Pacientes</a></li>
+                    <li><a asp-controller="Medicos" asp-action="Index">Médicos</a></li>
+                    <li><a asp-controller="Agendamentos" asp-action="Index">Agendamentos</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="column is-9">
+            <h3 class="title">@ViewData["Title"]</h3>
+            <a class="button is-info has-text-left" asp-action="Adicionar">Adicionar novo usuário</a>
+            <hr />
+            <table class="table is-bordered is-striped is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuário</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UsuarioID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Login)
+                            </td>
+                            <td>
+                                <a asp-action="Editar" asp-route-id="@item.UsuarioID">Editar</a> |
+                                <a asp-action="Remover" class="remover-usuario" asp-route-id="@item.UsuarioID">Remover</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

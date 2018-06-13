@@ -1,0 +1,40 @@
+﻿@model Usuario
+
+@{
+    ViewData["Title"] = "Adicionar Usuário";
+}
+
+<div class="container">
+    <div class="columns">
+        <div class="column is-3">
+            <aside class="menu">
+                <p class="menu-label">
+                    Administração
+                </p>
+                <ul class="menu-list">
+                    <li><a asp-controller="Home" asp-action="Index">Totais</a></li>
+                    <li><a class="is-active" asp-controller="Usuarios" asp-action="Index">Usuários</a></li>
+                    <li><a asp-controller="Pacientes" asp-action="Index">Pacientes</a></li>
+                    <li><a asp-controller="Medicos" asp-action="Index">Médicos</a></li>
+                    <li><a asp-controller="Agendamentos" asp-action="Index">Agendamentos</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="column is-9">
+            <h3 class="title">@ViewData["Title"]</h3>
+            <form asp-action="Adicionar">
+                <div class="column">
+                    <label>Usuário</label>
+                    <input type="text" asp-for="Login" class="input is-info is-medium" placeholder="Usuário">
+                </div>
+                <div class="column">
+                    <label>Senha</label>
+                    <input type="password" asp-for="Senha" class="input is-info is-medium" placeholder="Senha">
+                </div>
+                <div class="column">
+                    <input type="submit" value="Adicionar" class="button is-medium is-info" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

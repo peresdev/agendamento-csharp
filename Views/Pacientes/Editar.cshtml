@@ -1,0 +1,37 @@
+﻿@model Paciente
+
+@{
+    ViewData["Title"] = "Editar Paciente";
+}
+
+<div class="container">
+    <div class="columns">
+        <div class="column is-3">
+            <aside class="menu">
+                <p class="menu-label">
+                    Administração
+                </p>
+                <ul class="menu-list">
+                    <li><a asp-controller="Home" asp-action="Index">Totais</a></li>
+                    <li><a asp-controller="Usuarios" asp-action="Index">Usuários</a></li>
+                    <li><a class="is-active" asp-controller="Pacientes" asp-action="Index">Pacientes</a></li>
+                    <li><a asp-controller="Medicos" asp-action="Index">Médicos</a></li>
+                    <li><a asp-controller="Agendamentos" asp-action="Index">Agendamentos</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="column is-9">
+            <h3 class="title">@ViewData["Title"]</h3>
+            <form asp-action="Editar">
+                <input type="hidden" asp-for="PacienteID" />
+                <div class="column">
+                    <label>Nome</label>
+                    <input type="text" asp-for="Nome" class="input is-info is-medium" placeholder="Nome">
+                </div>
+                <div class="column">
+                    <input type="submit" value="Editar" class="button is-medium is-info" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
